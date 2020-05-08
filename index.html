@@ -15,7 +15,7 @@
 
  
 <body style="background-color:#080808;">
- <img src="images/chili.jpg" alt="" />
+ <img class="randomsoup" src="images/chili.jpg" alt="" />
 
  <script>
     document.onreadystatechange = function () {
@@ -29,7 +29,7 @@
         'images/potroast.jpg'
     ],
     
-    image = document.querySelector('image'),
+    image = document.querySelector('.randomsoup'),
     activeImgUrl = imgStorage[Math.round(Math.random() * (imgStorage.length - 1))];        
     image.setAttribute('src', activeImgUrl);
   </script>
