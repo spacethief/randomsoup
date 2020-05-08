@@ -21,7 +21,8 @@
 
  
 <body style="background-color:#080808;text-align:center;">
- <img class="randomsoup" src="images/chili.jpg" alt="" />
+ <img class="randomsoup" src="images/chili.jpg" alt="A picture of soup." />
+ <h1 class="words"></h1>
 
  <script>
     const imgStorage = [ 
@@ -37,6 +38,17 @@
     activeImgUrl = imgStorage[Math.round(Math.random() * (imgStorage.length - 1))];        
 
     image.setAttribute('src', activeImgUrl);
+
+    const wordStorage = [
+        "Tasty!",
+        "Spoony!",
+        "Yum!"
+    ]
+
+    words = document.querySelector('.words'),
+    activeWords = wordStorage[Math.round(Math.random() * (wordStorage.length - 1))];
+
+    words.textContent = activeWords;
   </script>
 
 </body>
