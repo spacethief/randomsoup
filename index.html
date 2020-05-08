@@ -5,14 +5,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-    img {
+    .container {
         max-width: 320px;
+        margin: 0 auto;
+    }
+    img {
+        max-width: 100%;
+    }
+    h1 {
+        max-width: 100%;
+        background-color: rgba(0,0,0,0.6);
+        padding: 0.3em;
+        color: #fff;
+        position: relative;
+        top: -50px;
     }
     @media screen and (min-width: 620px) {
-        img { max-width: 600px; }
+        .container { max-width: 600px; }
     }
     @media screen and (min-width: 1220px) {
-        img { max-width: 1200px; }
+        .container { max-width: 1200px; }
     }
 </style>
 
@@ -20,9 +32,11 @@
 
 
  
-<body style="background-color:#080808;text-align:center;">
- <img class="randomsoup" src="images/chili.jpg" alt="A picture of soup." />
- <h1 class="words"></h1>
+<body style="background-color:#080808;">
+    <div class="container">
+        <img class="randomsoup" src="images/chili.jpg" alt="A picture of soup." />
+        <h1 class="words"></h1>
+    </div>
 
  <script>
     const imgStorage = [ 
