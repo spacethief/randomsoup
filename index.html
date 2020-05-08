@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+ <head>
+  <title>random soup</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+
+ 
+<body>
+ <img src="images/chili.jpg" alt="" />
+
+ <script>
+    document.onreadystatechange = function () {
+    if (document.readyState == "interactive") {    
+    const imgStorage = [ 
+        'images/chili.jpg',
+        'images/chilipot.jpg',
+        'images/hotandsour.jpg',
+        'images/hotandsourpot.jpg',
+        'images/potpie.jpg',
+        'images/potroast.jpg'
+    ],
+    
+    image = document.querySelector('image'),
+    activeImgUrl = imgStorage[Math.round(Math.random() * (imgStorage.length - 1))];        
+    image.setAttribute('src', activeImgUrl);
+  </script>
+
+</body>
+
+</html>
